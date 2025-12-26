@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: dsvpwa
-          image: ghcr.io/taher-alsaegh/dsvpwa:0.1.4
+          image: ghcr.io/taher-alsaegh/dsvpwa:0.1.4@sha256:678456a0481420bef5b0c27066df1773698b3daabe9052e66aeae4d125cd26f5
           ports:
             - containerPort: 8080
 
