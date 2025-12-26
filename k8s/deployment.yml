@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dsvpwa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dsvpwa
+  template:
+    metadata:
+      labels:
+        app: dsvpwa
+    spec:
+      containers:
+        - name: dsvpwa
+          image: ghcr.io/taher-alsaegh/dsvpwa:0.1.4
+          ports:
+            - containerPort: 8080
+
