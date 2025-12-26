@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dsvpwa
+  namespace: dsvpwa
+spec:
+  type: NodePort
+  selector:
+    app: dsvpwa
+  ports:
+    - name: http
+      port: 65413
+      targetPort: 65413
+      nodePort: 30013
