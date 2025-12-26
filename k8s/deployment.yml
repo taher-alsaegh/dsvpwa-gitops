@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dsvpwa
+  namespace: dsvpwa
 spec:
   replicas: 1
   selector:
@@ -17,4 +18,3 @@ spec:
           image: ghcr.io/taher-alsaegh/dsvpwa:dev@sha256:ca2cc1289190eb429794446ab3733a5e216d4f59277b4e60297cfa5901edccc7
           ports:
             - containerPort: 65413
-
