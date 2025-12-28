@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: dsvpwa-local-cert
+  namespace: dsvpwa
+spec:
+  secretName: dsvpwa-tls
+  dnsNames:
+    - dsvpwa.local
+  issuerRef:
+    name: local-ca-issuer
+    kind: ClusterIssuer
+
