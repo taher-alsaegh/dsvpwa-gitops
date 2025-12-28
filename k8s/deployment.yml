@@ -17,7 +17,7 @@ spec:
         - name: dsvpwa
           image: ghcr.io/taher-alsaegh/dsvpwa:dev@sha256:ca2cc1289190eb429794446ab3733a5e216d4f59277b4e60297cfa5901edccc7
           command: ["python"]
-          args: ["-m", "dsvpwa", "--host", "0.0.0.0", "--port", "65413"]
+          args: ["-m", "dsvpwa.py", "--host", "0.0.0.0", "--port", "65413"]
           ports:
             - containerPort: 65413
           env:
