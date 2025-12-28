@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dsvpwa
+  namespace: dsvpwa
+spec:
+  rules:
+    - host: dsvpwa.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: dsvpwa
+                port:
+                  number: 65413
+
