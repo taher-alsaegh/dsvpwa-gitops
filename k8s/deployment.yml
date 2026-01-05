@@ -5,6 +5,7 @@ metadata:
   namespace: dsvpwa
 spec:
   replicas: 2
+  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app: dsvpwa
@@ -29,4 +30,3 @@ spec:
           env:
             - name: PORT
               value: "65413"
-
