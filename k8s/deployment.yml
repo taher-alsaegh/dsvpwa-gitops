@@ -5,7 +5,7 @@ metadata:
   namespace: dsvpwa
 spec:
   replicas: 2
-  revisionHistoryLimit: 1
+  revisionHistoryLimit: 0
   selector:
     matchLabels:
       app: dsvpwa
