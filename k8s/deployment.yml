@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: dsvpwa
-          image: ghcr.io/taher-alsaegh/dsvpwa:0.1.8
+          image: ghcr.io/taher-alsaegh/dsvpwa:0.1.7
           command:
             - python
           args:
