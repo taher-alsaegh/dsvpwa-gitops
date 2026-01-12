@@ -5,7 +5,6 @@ metadata:
   namespace: dsvpwa
 spec:
   replicas: 2
-  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app: dsvpwa
@@ -16,7 +15,7 @@ spec:
     spec:
       containers:
         - name: dsvpwa
-          image: ghcr.io/taher-alsaegh/dsvpwa:0.2.0
+          image: ghcr.io/taher-alsaegh/dsvpwa:dev
           command:
             - python
           args:
@@ -30,3 +29,4 @@ spec:
           env:
             - name: PORT
               value: "65413"
+
